@@ -5,7 +5,7 @@ function start() {
   var query = getParameterByName("q");
   if (query) search(query.replaceAll("+", "%2B"));
 
-  document.getElementById("keywords").focus();
+  // document.getElementById("keywords").focus();
 
   window.setInterval(function() {
     updatetime();
