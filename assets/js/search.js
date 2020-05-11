@@ -79,7 +79,7 @@ function search(text) {
     if (containsProtocol(text)) window.location = text;
     else window.location = "https://" + text;
   } else {
-    window.location = "https://duckduckgo.com/?q=" + text;
+    window.location = window.providers[0].url + text;
   }
 }
 
